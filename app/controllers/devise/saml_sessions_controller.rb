@@ -39,7 +39,7 @@ class Devise::SamlSessionsController < Devise::SessionsController
         redirect_to action: :new
       end
     else
-      head :invalid_request
+      redirect_to 'https://my.tversu.ru'
     end
   end
 
